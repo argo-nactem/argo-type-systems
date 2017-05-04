@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>uk.ac.nactem.argo.typesystems</groupId>
+	<artifactId>argo-type-systems</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Argo Type Systems</name>
+	<modules>
+		<module>U_compareTypeSystem</module>
+		<module>EventTypeSystem</module>
+	</modules>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<uima.version>2.9.0</uima.version>
+	</properties>
+
+	<build>
+		<resources>
+			<resource>
+				<directory>desc</directory>
+			</resource>
+		</resources>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.uima</groupId>
+					<artifactId>jcasgen-maven-plugin</artifactId>
+					<version>${uima.version}</version>  <!-- change this to the latest version -->
+					<executions>
+						<execution>
+							<goals>
+								<goal>generate</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+
+						<!-- REQUIRED -->
+						<typeSystemIncludes>
+							<typeSystemInclude>${descriptor}</typeSystemInclude>
+						</typeSystemIncludes>
+
+						<!-- true or false, default = false -->
+						<!-- if true, then although the complete merged type system will be 
+							created internally, only those types whose definition is contained within 
+							this maven project will be generated. The others will be presumed to be available 
+							via other projects. -->
+						<!-- OPTIONAL -->
+						<limitToProject>true</limitToProject>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.uima</groupId>
+					<artifactId>PearPackagingMavenPlugin</artifactId>
+					<version>${uima.version}</version>
+					<extensions>true</extensions>
+					<executions>
+						<execution>
+							<phase>package</phase>
+							<configuration>
+								<mainComponentDesc>${descriptor}</mainComponentDesc>
+								<componentId>${component.id}</componentId>
+							</configuration>
+							<goals>
+								<goal>package</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.apache.uima</groupId>
+				<artifactId>uimaj-core</artifactId>
+				<version>${uima.version}</version>
+				<scope>provided</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+</project>
