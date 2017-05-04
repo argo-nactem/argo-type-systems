@@ -12,7 +12,6 @@
 
 	<properties>
 		<descriptor>desc/uk/ac/nactem/uima/EventTypeSystem.xml</descriptor>
-		<component.id>${project.groupId}.${project.artifactId}</component.id>
 	</properties>
 
 	<build>

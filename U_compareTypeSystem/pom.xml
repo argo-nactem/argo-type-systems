@@ -12,7 +12,6 @@
 
 	<properties>
 		<descriptor>desc/org/u_compare/U_compareTypeSystem.xml</descriptor>
-		<component.id>${project.groupId}.${project.artifactId}</component.id>
 	</properties>
 
 	<build>
