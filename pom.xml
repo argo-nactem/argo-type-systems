@@ -6,6 +6,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Argo Type Systems</name>
+	<inceptionYear>2017</inceptionYear>
+	<description>Collection of UIMA Type Systems used by Argo</description>
+	<organization>
+		<name>The National Centre for Text Mining (NaCTeM)</name>
+		<url>http://nactem.ac.uk</url>
+	</organization>
+	
 	<modules>
 		<module>U_compareTypeSystem</module>
 		<module>EventTypeSystem</module>
@@ -18,6 +25,15 @@
 		<uima.version>2.9.0</uima.version>
 		<component.id>${project.groupId}.${project.artifactId}</component.id>
 	</properties>
+	
+	<licenses>
+		<license>
+			<name>LGPL-3.0</name>
+			<url>http://www.gnu.org/licenses/lgpl-3.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>GNU Lesser General Public License v3.0</comments>
+		</license>
+	</licenses>
 
 	<build>
 		<resources>
