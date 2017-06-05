@@ -11,7 +11,7 @@
   </parent>
 
 	<properties>
-		<descriptor>desc/uk/ac/nactem/uima/EventTypeSystem.xml</descriptor>
+		<descriptor>desc/uk/ac/nactem/uima/ChebiCurationTypeSystem.xml</descriptor>
 	</properties>
 
 	<build>
