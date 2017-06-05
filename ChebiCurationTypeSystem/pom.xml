@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>uk.ac.nactem.uima</groupId>
+  <artifactId>ChebiCurationTypeSystem</artifactId>
+  <version>0.1</version>
+  
+  <parent>
+  	<groupId>uk.ac.nactem.argo.typesystems</groupId>
+  	<artifactId>argo-type-systems</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+	<properties>
+		<descriptor>desc/uk/ac/nactem/uima/EventTypeSystem.xml</descriptor>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.uima</groupId>
+				<artifactId>jcasgen-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.uima</groupId>
+				<artifactId>PearPackagingMavenPlugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.uima</groupId>
+			<artifactId>uimaj-core</artifactId>
+		</dependency>
+	</dependencies>
+</project>
