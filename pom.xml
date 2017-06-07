@@ -16,6 +16,7 @@
 	<modules>
 		<module>U_compareTypeSystem</module>
 		<module>EventTypeSystem</module>
+		<module>ChebiCurationTypeSystem</module>
 	</modules>
 
 	<properties>
@@ -39,6 +40,9 @@
 		<resources>
 			<resource>
 				<directory>desc</directory>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
 			</resource>
 		</resources>
 		<pluginManagement>
