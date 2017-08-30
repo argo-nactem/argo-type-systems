@@ -4,34 +4,26 @@
 	<parent>
 		<groupId>uk.ac.nactem.argo.typesystems</groupId>
 		<artifactId>argo-type-systems</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.1</version>
 	</parent>
 	<groupId>uk.ac.nactem.uima</groupId>
 	<artifactId>EventTypeSystem</artifactId>
 	<version>0.6</version>
 
 	<properties>
-		<descriptor>desc/uk/ac/nactem/uima/EventTypeSystem.xml</descriptor>
+		<uima.descriptor>desc/uk/ac/nactem/uima/EventTypeSystem.xml</uima.descriptor>
 	</properties>
 
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.uima</groupId>
-				<artifactId>jcasgen-maven-plugin</artifactId>
+				<artifactId>PearPackagingMavenPlugin</artifactId>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.uima</groupId>
-				<artifactId>PearPackagingMavenPlugin</artifactId>
+				<artifactId>jcasgen-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.apache.uima</groupId>
-			<artifactId>uimaj-core</artifactId>
-		</dependency>
-	</dependencies>
-
 </project>

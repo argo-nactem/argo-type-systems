@@ -4,38 +4,34 @@
 	<parent>
 		<groupId>uk.ac.nactem.argo.typesystems</groupId>
 		<artifactId>argo-type-systems</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.1</version>
 	</parent>
 	<groupId>org.u_compare</groupId>
 	<artifactId>U_compareTypeSystem</artifactId>
 	<version>1.2.4</version>
 
 	<properties>
-		<descriptor>desc/org/u_compare/U_compareTypeSystem.xml</descriptor>
+		<uima.descriptor>desc/org/u_compare/U_compareTypeSystem.xml</uima.descriptor>
 	</properties>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.uima</groupId>
-				<artifactId>jcasgen-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.uima</groupId>
-				<artifactId>PearPackagingMavenPlugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
 	<dependencies>
-		<dependency>
-			<groupId>org.apache.uima</groupId>
-			<artifactId>uimaj-core</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>uk.ac.nactem.uima</groupId>
 			<artifactId>EventTypeSystem</artifactId>
 			<version>0.6</version>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.uima</groupId>
+				<artifactId>PearPackagingMavenPlugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.uima</groupId>
+				<artifactId>jcasgen-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 </project>
