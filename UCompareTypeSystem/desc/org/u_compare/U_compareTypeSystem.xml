@@ -13,7 +13,7 @@
 		<typeDescription>
 			<name>org.u_compare.shared.DiscontinuousAnnotation</name>
 			<description>Base abstract type for annotations with discontinuous
-				regions. &lt;br&gt;&lt;/br&gt;</description>
+				regions. </description>
 			<supertypeName>uima.tcas.Annotation</supertypeName>
 			<features>
 				<featureDescription>
@@ -27,7 +27,7 @@
 		<typeDescription>
 			<name>org.u_compare.shared.BaseAnnotation</name>
 			<description>Base abstract type for annotations with
-				AnnotationMetadata. &lt;br&gt;&lt;/br&gt;</description>
+				AnnotationMetadata. </description>
 			<supertypeName>org.u_compare.shared.DiscontinuousAnnotation
 			</supertypeName>
 			<features>
@@ -41,7 +41,7 @@
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.FeatureTrace</name>
-			<description>For system use. &lt;br&gt;&lt;/br&gt;</description>
+			<description>For system use. </description>
 			<supertypeName>uima.cas.TOP</supertypeName>
 			<features>
 				<featureDescription>
@@ -61,7 +61,7 @@
 		<typeDescription>
 			<name>org.u_compare.shared.AnnotationMetadata</name>
 			<description>THIS TYPE WILL BE CHANGED TO INHERIT APACHE UIMA
-				ANNOTATIONMETADATA TYPE, WHEN IT RELEASED. &lt;br&gt;&lt;/br&gt;
+				ANNOTATIONMETADATA TYPE, WHEN IT RELEASED. 
 			</description>
 			<supertypeName>uima.cas.TOP</supertypeName>
 			<features>
@@ -77,7 +77,7 @@
 		<typeDescription>
 			<name>org.u_compare.shared.syntactic.SyntacticAnnotation</name>
 			<description>Base abstract type for syntactic annotations.
-				&lt;br&gt;&lt;/br&gt;</description>
+				</description>
 			<supertypeName>org.u_compare.shared.BaseAnnotation</supertypeName>
 		</typeDescription>
 		<typeDescription>
@@ -424,20 +424,20 @@
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.text.HLN</name>
-			<description>headlines and datelines&lt;BR&gt;&lt;/BR&gt;
+			<description>headlines and datelines
 			</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.text.TextFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.text.LST</name>
-			<description>list markers&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>list markers</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.text.TextFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.text.TTL</name>
-			<description>titles&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>titles</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.text.TextFunctionLabel
 			</supertypeName>
 		</typeDescription>
@@ -451,66 +451,66 @@
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.grammatical.CLF</name>
-			<description>true clefts&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>true clefts</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.grammatical.GrammaticalFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.grammatical.NOM</name>
-			<description>non NPs that function as NPs&lt;BR&gt;&lt;/BR&gt;
+			<description>non NPs that function as NPs
 			</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.grammatical.GrammaticalFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.grammatical.ADV</name>
-			<description>clausal and NP adve&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>clausal and NP adve</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.grammatical.GrammaticalFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.grammatical.DTV</name>
 			<description>the dative object in the unshifted form of the double
-				object construction&lt;BR&gt;&lt;/BR&gt;</description>
+				object construction</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.grammatical.GrammaticalFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.grammatical.LGS</name>
-			<description>logical subjects in passives&lt;BR&gt;&lt;/BR&gt;
+			<description>logical subjects in passives
 			</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.grammatical.GrammaticalFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.grammatical.PRD</name>
-			<description>non VP predicates&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>non VP predicates</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.grammatical.GrammaticalFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.grammatical.PUT</name>
-			<description>locative complement of put&lt;BR&gt;&lt;/BR&gt;
+			<description>locative complement of put
 			</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.grammatical.GrammaticalFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.grammatical.SBJ</name>
-			<description>surface subject&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>surface subject</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.grammatical.GrammaticalFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.grammatical.TPC</name>
 			<description>topicalized and fronted
-				constituents&lt;BR&gt;&lt;/BR&gt;</description>
+				constituents</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.grammatical.GrammaticalFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.grammatical.CLR</name>
-			<description>closely related&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>closely related</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.grammatical.GrammaticalFunctionLabel
 			</supertypeName>
 		</typeDescription>
@@ -524,96 +524,96 @@
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.semantic.VOC</name>
-			<description>vocatives&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>vocatives</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.semantic.SemanticFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.semantic.BNF</name>
 			<description>benefactive, the beneficiary of an
-				action&lt;BR&gt;&lt;/BR&gt;</description>
+				action</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.semantic.SemanticFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.semantic.DIR</name>
-			<description>direction and trajectory&lt;BR&gt;&lt;/BR&gt;
+			<description>direction and trajectory
 			</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.semantic.SemanticFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.semantic.LOC</name>
-			<description>location&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>location</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.semantic.SemanticFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.semantic.MNR</name>
-			<description>manner&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>manner</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.semantic.SemanticFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.semantic.PRP</name>
-			<description>purpose and reason&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>purpose and reason</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.semantic.SemanticFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.function.semantic.TMP</name>
-			<description>temporal phrases&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>temporal phrases</description>
 			<supertypeName>org.u_compare.shared.label.penn.function.semantic.SemanticFunctionLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.coindex.T</name>
-			<description>WH-movement and topicalization&lt;BR&gt;&lt;/BR&gt;
+			<description>WH-movement and topicalization
 			</description>
 			<supertypeName>org.u_compare.shared.label.penn.coindex.NullElementLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.coindex.ICH</name>
-			<description>Interpret Constituent Here&lt;BR&gt;&lt;/BR&gt;
+			<description>Interpret Constituent Here
 			</description>
 			<supertypeName>org.u_compare.shared.label.penn.coindex.NullElementLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.coindex.PPA</name>
-			<description>Permanent Predictable Ambiguity&lt;BR&gt;&lt;/BR&gt;
+			<description>Permanent Predictable Ambiguity
 			</description>
 			<supertypeName>org.u_compare.shared.label.penn.coindex.NullElementLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.coindex.RNR</name>
-			<description>Right Node Raising&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>Right Node Raising</description>
 			<supertypeName>org.u_compare.shared.label.penn.coindex.NullElementLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.coindex.EXP</name>
-			<description>EXPletive&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>EXPletive</description>
 			<supertypeName>org.u_compare.shared.label.penn.coindex.NullElementLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.coindex.ZERO</name>
-			<description>ZERO&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>ZERO</description>
 			<supertypeName>org.u_compare.shared.label.penn.coindex.NullElementLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.coindex.NONE</name>
-			<description>NONE&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>NONE</description>
 			<supertypeName>org.u_compare.shared.label.penn.coindex.NullElementLabel
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.label.penn.coindex.Q</name>
-			<description>?&lt;BR&gt;&lt;/BR&gt;</description>
+			<description>?</description>
 			<supertypeName>org.u_compare.shared.label.penn.coindex.NullElementLabel
 			</supertypeName>
 		</typeDescription>
@@ -1751,45 +1751,45 @@
 		<typeDescription>
 			<name>org.u_compare.shared.document.Structure</name>
 			<description>Abstract type for structural document annotations.
-				&lt;br&gt;&lt;/br&gt;</description>
+				</description>
 			<supertypeName>org.u_compare.shared.document.DocumentClassAnnotation
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.document.structure.Abstract</name>
-			<description>Article Abstract. &lt;br&gt;&lt;/br&gt;</description>
+			<description>Article Abstract. </description>
 			<supertypeName>org.u_compare.shared.document.Structure
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.document.structure.Article</name>
-			<description>Article Abstract. &lt;br&gt;&lt;/br&gt;</description>
+			<description>Article Abstract. </description>
 			<supertypeName>org.u_compare.shared.document.Structure
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.document.structure.Appendix</name>
-			<description>Appendix. &lt;br&gt;&lt;/br&gt;</description>
+			<description>Appendix. </description>
 			<supertypeName>org.u_compare.shared.document.Structure
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.document.structure.Section</name>
-			<description>Section. &lt;br&gt;&lt;/br&gt;</description>
+			<description>Section. </description>
 			<supertypeName>org.u_compare.shared.document.Structure
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.document.Text</name>
 			<description>Abstract type for textual document annotations.
-				&lt;br&gt;&lt;/br&gt;</description>
+				</description>
 			<supertypeName>org.u_compare.shared.document.DocumentClassAnnotation
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.document.text.TextBody</name>
 			<description>Abstract type for text body annotations.
-				&lt;br&gt;&lt;/br&gt;</description>
+				</description>
 			<supertypeName>org.u_compare.shared.document.Text</supertypeName>
 		</typeDescription>
 		<typeDescription>
@@ -1807,7 +1807,7 @@
 		<typeDescription>
 			<name>org.u_compare.shared.document.text.Heading</name>
 			<description>Abstract type for text heading annotations.
-				&lt;br&gt;&lt;/br&gt;</description>
+				</description>
 			<supertypeName>org.u_compare.shared.document.Text</supertypeName>
 		</typeDescription>
 		<typeDescription>
@@ -1842,14 +1842,14 @@
 		<typeDescription>
 			<name>org.u_compare.shared.document.NonText</name>
 			<description>Abstract type for non text parts such as images.
-				&lt;br&gt;&lt;/br&gt;</description>
+				</description>
 			<supertypeName>org.u_compare.shared.document.DocumentClassAnnotation
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.document.Fragment</name>
 			<description>Abstract type for fragmental document annotations.
-				&lt;br&gt;&lt;/br&gt;</description>
+				</description>
 			<supertypeName>org.u_compare.shared.document.DocumentClassAnnotation
 			</supertypeName>
 		</typeDescription>
@@ -1897,15 +1897,13 @@
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.document.DocumentAnnotation</name>
-			<description>Base abstract type for document annotations.
-				&lt;br&gt;&lt;/br&gt;</description>
+			<description>Base abstract type for document annotations.</description>
 			<supertypeName>org.u_compare.shared.ReferenceAnnotation
 			</supertypeName>
 		</typeDescription>
 		<typeDescription>
 			<name>org.u_compare.shared.document.DocumentClassAnnotation</name>
-			<description>Assumed to be used to express an instance of a document
-				tag. &lt;br&gt;&lt;/br&gt;</description>
+			<description>Assumed to be used to express an instance of a document.</description>
 			<supertypeName>org.u_compare.shared.document.DocumentAnnotation
 			</supertypeName>
 			<features>
@@ -1929,7 +1927,7 @@
 		<typeDescription>
 			<name>org.u_compare.shared.document.DocumentAttribute</name>
 			<description>Abstract type for document attributes, which appear in
-				the document tags. &lt;br&gt;&lt;/br&gt;</description>
+				the document tags.</description>
 			<supertypeName>uima.cas.TOP</supertypeName>
 			<features>
 				<featureDescription>
@@ -1943,7 +1941,7 @@
 		<typeDescription>
 			<name>org.u_compare.shared.document.DocumentValueAttribute</name>
 			<description>Assumed to be used to correspond to an attribute
-				name-value pair (CDATA in case of DTD). &lt;br&gt;&lt;/br&gt;
+				name-value pair (CDATA in case of DTD). 
 			</description>
 			<supertypeName>org.u_compare.shared.document.DocumentAttribute
 			</supertypeName>
@@ -1958,7 +1956,7 @@
 		<typeDescription>
 			<name>org.u_compare.shared.document.DocumentReferenceAttribute</name>
 			<description>Assumed to be used to correspond to an attribute name-id
-				pair (IDREF in case of DTD). &lt;br&gt;&lt;/br&gt;</description>
+				pair (IDREF in case of DTD). </description>
 			<supertypeName>org.u_compare.shared.document.DocumentAttribute
 			</supertypeName>
 			<features>
@@ -2638,7 +2636,7 @@
 				<featureDescription>
 					<name>Unit_Multiplier</name>
 					<description>The multiplier to be applied, derived from the prefix
-						value (i.e., mega --> 1000, micro --> 0.0000001)
+						value (i.e., mega - 1000, micro - 0.0000001)
 					</description>
 					<rangeTypeName>uima.cas.Double</rangeTypeName>
 				</featureDescription>

@@ -1,31 +1,40 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>uk.ac.nactem.argo</groupId>
+		<artifactId>argo-parent-pom</artifactId>
+		<version>0.5</version>
+	</parent>
+
 	<groupId>uk.ac.nactem.argo.typesystems</groupId>
 	<artifactId>argo-type-systems</artifactId>
-	<version>0.1</version>
+	<version>1.0</version>
 	<packaging>pom</packaging>
+
 	<name>Argo Type Systems</name>
 	<inceptionYear>2017</inceptionYear>
 	<description>Collection of UIMA Type Systems used by Argo</description>
+	<url>https://github.com/argo-nactem/argo-type-systems</url>
 	<organization>
 		<name>The National Centre for Text Mining (NaCTeM)</name>
 		<url>http://nactem.ac.uk</url>
 	</organization>
 
-	<modules>
-		<module>U_compareTypeSystem</module>
-		<module>EventTypeSystem</module>
-		<module>ChebiCurationTypeSystem</module>
-	</modules>
+	<developers>
+		<developer>
+			<organization>NaCTeM</organization>
+			<organizationUrl>http://nactem.ac.uk</organizationUrl>
+		</developer>
+	</developers>
 
-	<properties>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<uima.version>2.9.0</uima.version>
-		<component.id>${project.groupId}.${project.artifactId}</component.id>
-	</properties>
+	<scm>
+		<connection>scm:git:git://github.com/argo-nactem/argo-type-systems</connection>
+		<developerConnection>scm:git:git@github.com:argo-nactem/argo-type-systems.git</developerConnection>
+		<url>https://github.com/argo-nactem/argo-type-systems</url>
+		<tag>HEAD</tag>
+	</scm>
 
 	<licenses>
 		<license>
@@ -35,6 +44,16 @@
 			<comments>GNU Lesser General Public License v3.0</comments>
 		</license>
 	</licenses>
+
+	<modules>
+		<module>UCompareTypeSystem</module>
+		<module>EventTypeSystem</module>
+		<module>ChebiCurationTypeSystem</module>
+	</modules>
+
+	<properties>
+		<component.id>${project.groupId}.${project.artifactId}</component.id>
+	</properties>
 
 	<build>
 		<resources>
@@ -96,14 +115,46 @@
 		</pluginManagement>
 	</build>
 
-
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.uima</groupId>
 			<artifactId>uimaj-core</artifactId>
-			<version>${uima.version}</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>release</id>
+			<build>
+				<plugins>
+					<!-- See https://issues.apache.org/jira/browse/CTAKES-399 -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<configuration>
+                    <sourceFileExcludes>
+                        <exclude>**/*_Type.java</exclude>
+                    </sourceFileExcludes>
+                    <tags>
+                        <tag>
+                            <name>generated</name>
+                            <placement>X</placement>
+                        </tag>
+                        <tag>
+                            <name>ordered</name>
+                            <placement>X</placement>
+                        </tag>
+                        <tag>
+                            <name>modifiable</name>
+                            <placement>X</placement>
+                        </tag>
+                    </tags>
+                </configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
 </project>
